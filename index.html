@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature Explorer</title>
+    <link rel="stylesheet" href="./src/style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="title">
+        <img class="nature_logo" src="./src/images/nature_logo.png" alt="" />
+        Nature Explorer
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </nav>
+      <i id="menu" class="bx bx-menu-alt-right"></i>
+    </header>
+
+    <div id="sidebar">
+      <div class="title">
+        <img class="nature_logo" src="./src/images/" alt="" /> Nature Explorer
+      </div>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- home section -->
+      <section id="hero">
+        <div class="hero_left">
+          <div class="title_container">
+            <small class="hero_title_small">Discover</small>
+            <h1 class="hero_title lg">NATURE</h1>
+          </div>
+          <div id="weather_container">
+            <div class="weather_country">
+              <div class="weather_city">
+                <h1 id="city"></h1>
+                <p>Philippines</p>
+              </div>
+              <img src="./src/images/cloud.png" alt="cloud" class="cloud" />
+            </div>
+
+            <div class="weather_temp">
+              <div id="temperature"></div>
+              <div class="weather_speed">
+                <div class="value">
+                  <p>Real Feel</p>
+                  <h1 id="real_feel"></h1>
+                </div>
+                <div class="value">
+                  <p>Wind</p>
+                  <span id="wind"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="date_container">
+              <div id="day"></div>
+              <p id="time"></p>
+            </div>
+          </div>
+        </div>
+        <div class="hero_right">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./src/images/img4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/images/img1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/images/img3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./src/images/img2.jpg" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+
+      <section id="about">
+        <img src="./src/images/About_img.png" class="about_model" alt="" />
+        <div class="about_info">
+          <h1>About Us</h1>
+          <span>Natural Resources</span>
+          <p>
+            At Nature's Harmony, we are dedicated to preserving the beauty and
+            bounty of our natural world. Our mission is to promote sustainable
+            practices and raise awareness about the importance of protecting our
+            planet's invaluable natural resources. Join us in our journey to
+            ensure a greener, healthier future for generations to come.
+            Together, we can make a difference.
+          </p>
+          <button>Let's Get Started</button>
+        </div>
+        <img
+          src="./src/images/Floating_icon1.png"
+          class="floating_img"
+          alt=""
+        />
+      </section>
+
+      <!-- gallery -->
+      <section id="gallery">
+        <h1>Gallery</h1>
+        <div id="photoGallery" class="photo-gallery"></div>
+        <img src="./src/images/Floating_icon2.png" alt="" class="floating1" />
+        <img src="./src/images/Floating_icon3.png" alt="" class="floating2" />
+      </section>
+
+      <section id="news">
+        <img src="./src/images/news_bg.jpg" class="news_bg" alt="" />
+        <div id="news-articles"></div>
+      </section>
+      <div class="floating-container">
+        <h2>Excited to explore the possibilities?</h2>
+        <p>
+          Thrilled to join forces on your upcoming venture! Together, let's
+          transform your vision into a stunning reality, with a special emphasis
+          on the wonders of nature.s
+        </p>
+        <button>Let's Get Started</button>
+      </div>
+      <footer>
+        <p>&copy; 2024 Nature Website. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.21.1/dist/date-fns.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
